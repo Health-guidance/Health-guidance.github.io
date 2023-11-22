@@ -1,0 +1,9 @@
+you can change the type from js to jsx
+git ignore other folders that you are not working on
+I.e
+if i'm working on chatbot i'll
+/src/components/About
+/src/components/Home
+vice versa
+!!!do not fuck this up i'm not entering git hell with nobody
+and also please don't put images in the public folder 
