@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../../Logo.png'
 import './Home.css'
 const Home = () => {
     return (
