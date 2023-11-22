@@ -1,25 +1,22 @@
-import logo from './Logo.png';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Chatbot from "./components/Chatbot/Chatbot";
 
-function App() {
+
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Please Kindly read instrutions.txt
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes >
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/check" element={<Chatbot />} />
+
+      </Routes>
+    </>
   );
-}
+};
 
 export default App;
