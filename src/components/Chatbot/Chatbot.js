@@ -1,4 +1,5 @@
 import React from 'react'
+import './Chatbot.css'
 
 const Chatbot = () => {
     return (
@@ -16,38 +17,59 @@ const Chatbot = () => {
                 experiencing any pain? You can type your symptoms or select from the
                 list below
             </div>
-            <div className="card mt-4 rounded-pill w-75">
+            <div className="card mt-4 rounded-pill w-75" onMouseEnter={(e) => {
+                e.currentTarget.className = 'card mt-4 shadow p-2 rounded-pill mb-5 w-75'
+            }} onMouseLeave={(e) => {
+                e.currentTarget.className = 'card mt-4 rounded-pill w-75'
+            }}>
                 <div className="card-body d-flex flex-column align-items-center justify-content-center max-w-360px">
                     <div className="text-dark text-base leading-5 max-w-271px">I feel feverish and cold</div>
                     <div className="text-muted text-base leading-5 max-w-302px mt-3">What could be the cause?</div>
                 </div>
             </div>
-            <div className="card mt-4 rounded-pill w-75">
+            <div className="card mt-4 rounded-pill w-75" onMouseEnter={(e) => {
+                e.currentTarget.className = 'card mt-4 shadow p-2 rounded-pill mb-5 w-75'
+            }} onMouseLeave={(e) => {
+                e.currentTarget.className = 'card mt-4 rounded-pill w-75'
+            }} >
                 <div className="card-body d-flex flex-column align-items-center justify-content-center max-w-360px">
                     <div className="text-dark text-base leading-5 max-w-271px">My head aches</div>
                     <div className="text-muted text-base leading-5 max-w-302px mt-2">How can I treat headaches?</div>
                 </div>
             </div>
-            <div className="card mt-4 rounded-pill w-75">
+            <div className="card mt-4 rounded-pill w-75" onMouseEnter={(e) => {
+                e.currentTarget.className = 'card mt-4 shadow p-2 rounded-pill mb-5 w-75'
+            }} onMouseLeave={(e) => {
+                e.currentTarget.className = 'card mt-4 rounded-pill w-75'
+
+            }}>
                 <div className="card-body d-flex flex-column align-items-center justify-content-center max-w-360px">
                     <div className="text-dark text-base leading-5 max-w-271px">How can I stop abdominal pains?</div>
                     <div className="text-muted text-base leading-5 max-w-302px mt-2">When should I see a doctor?</div>
                 </div>
             </div>
-            <div className="card mt-4 rounded-pill mb-5 w-75">
+            <div className="card mt-4  rounded-pill mb-5 w-75" onMouseEnter={(e) => {
+                e.currentTarget.className = 'card mt-4 shadow p-2 rounded-pill mb-5 w-75'
+            }} onMouseLeave={(e) => {
+                e.currentTarget.className = 'card mt-4 rounded-pill mb-5 w-75'
+            }}>
                 <div className="card-body d-flex flex-column align-items-center justify-content-center max-w-360px">
                     <div className="text-dark text-base leading-5 max-w-271px">How can I treat hot water burns?</div>
                     <div className="text-muted text-base leading-5 max-w-302px mt-3">Home remedies for hot water burns</div>
                 </div>
             </div>
-            <form className="form-floating mt-10 w-75 rounded-pill">
+            <form className="form-floating w-75 d-flex rounded-pill">
 
 
                 <input type="email" class="form-control rounded-pill" id="floatingInput" placeholder="Input message here" />
+                <label htmlFor='floatingInput' >Input message</label>
+
+                <img style={{ width: "2%", height: "0%", alignSelf: 'center' }} src={require('./Send.png')} />
+
 
             </form>
             <div className="text-dark text-center text-sm leading-4 underline text-center mt-3">
-                <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank">
+                <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" rel='noreferrer' target="_blank">
                     ChatGPT August 3 Version
                 </a>
             </div>
